@@ -1,0 +1,407 @@
+
+// HOTEL MANAGEMENT IN C // BILLING SYSTEM FOR HOTEL // WHEN USER PURCHASE ANY ITEM //
+
+
+#include<stdio.h>
+void breakfast();
+void lunch();
+void dinner();
+void mainmenu();
+void leave();
+int num;
+float price;
+float total;
+char choice;
+int again;
+
+void leave()
+{
+    printf("THANK YOU VISIT AGAIN ");
+}
+
+void main()
+{ 
+    mainmenu(); 
+    
+}
+void mainmenu()
+{ 
+    char choice=' ';
+   printf("WELCOME TO SITARA RESTARUANT\n");
+   printf(" Please select the meal that you would like to purchase\n");
+   printf(" [A]Breakfast");
+   printf(" [B]Lunch");
+   printf(" [c]Dinner");
+   printf(" [D]Exit");
+   printf("Enter your choice here:");
+   scanf("%c",&choice);
+   {
+     if((choice)=='A')
+        breakfast();
+     else
+         if((choice)=='B')
+            lunch();
+     else
+         if((choice)=='C')
+            dinner();
+      else
+         if((choice)=='D')
+            leave();
+      else
+         if((choice)!='A','B','C','D')
+           { mainmenu(); }
+     }
+}
+
+void breakfast()
+{
+int choice;
+int quantity;
+int again;
+printf("Welcome to Sitara Restaurant\n");
+printf("Breakfast Menu\n");
+printf("Please select the food that you would like to purchase\n");
+printf("[1]dosa-Rs 80.00\n");
+printf("[2]idly-Rs 50.00\n");
+printf("[3]chapathi-Rs 60.00\n");
+printf("Enter your choice here:");
+scanf("%d",&choice);
+{
+if(choice==1)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=80.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+breakfast();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave(); 
+    
+}
+}
+
+else
+if(choice==2)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=50.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+breakfast();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave(); 
+    
+}
+}
+
+else
+if(choice==3)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=60.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+breakfast();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave();
+}
+}
+else 
+if(choice!=1,2,3){
+printf("Invalid Choice Entered"); 
+}
+} 
+}
+
+
+
+
+
+
+void lunch()
+{
+int choice;
+int quantity;
+int again;
+printf("Welcome to Sitara Restaurant\n");
+printf("Lunch  Menu\n");
+printf("Please select the food that you would like to purchase\n");
+printf("[1]Rice-Rs 180.00\n");
+printf("[2]Biryani-Rs 510.00\n");
+printf("[3]Gobi Rice-Rs 160.00\n");
+printf("Enter your choice here:");
+scanf("%d",&choice);
+{
+if(choice==1)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=180.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+lunch();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave(); 
+    
+}
+}
+
+else
+if(choice==2)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=510.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+lunch();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave(); 
+    
+}
+}
+
+else
+if(choice==3)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=160.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+lunch();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave();
+}
+}
+else 
+if(choice!=1,2,3){
+printf("Invalid Choice Entered"); 
+}
+} 
+}
+
+
+
+
+
+
+
+
+void dinner()
+{
+int choice;
+int quantity;
+int again;
+printf("Welcome to Sitara Restaurant\n");
+printf("Dinner Menu\n");
+printf("Please select the food that you would like to purchase\n");
+printf("[1]Chicken Chop-Rs 180.00\n");
+printf("[2]Spagetti-Rs 510.00\n");
+printf("[3]Chicken Burger -Rs 160.00\n");
+printf("Enter your choice here:");
+scanf("%d",&choice);
+{
+if(choice==1)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=180.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+dinner();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave(); 
+    
+}
+}
+
+else
+if(choice==2)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=510.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+dinner();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave(); 
+    
+}
+}
+
+else
+if(choice==3)
+{
+printf("Enter quantity");
+scanf("%d",&quantity);
+total=160.00*quantity;
+printf("Your total amount is=%f",total);
+printf("\n Would you like to by anything else?\n [1]Yes,[2]No");
+scanf("%d",&again);
+if(again==1)
+dinner();
+else 
+if(again==2)
+     mainmenu();
+else 
+if(again!=1,2)
+{
+printf("Sorry Invalid Decision Entered");
+leave();
+}
+}
+else 
+if(choice!=1,2,3){
+printf("Invalid Choice Entered"); 
+}
+} 
+}
+
+
+
+
+OUTPUT 
+WELCOME TO SITARA RESTARUANT
+Please select the meal that you would like to purchase
+[A]Breakfast [B]Lunch [c]Dinner [D]ExitEnter your choice here:A
+Welcome to Sitara Restaurant
+Breakfast Menu
+Please select the food that you would like to purchase
+[1]dosa-Rs 80.00
+[2]idly-Rs 50.00
+[3]chapathi-Rs 60.00
+Enter your choice here:2
+Enter quantity2
+Your total amount is=100.000000
+ Would you like to by anything else?
+ [1]Yes,[2]No1
+Welcome to Sitara Restaurant
+Breakfast Menu
+Please select the food that you would like to purchase
+[1]dosa-Rs 80.00
+[2]idly-Rs 50.00
+[3]chapathi-Rs 60.00
+Enter your choice here:5
+Invalid Choice Entered
+
+
+
+
+
+WELCOME TO SITARA RESTARUANT
+ Please select the meal that you would like to purchase
+ [A]Breakfast [B]Lunch [c]Dinner [D]ExitEnter your choice here:B
+Welcome to Sitara Restaurant
+Lunch  Menu
+Please select the food that you would like to purchase
+[1]Rice-Rs 180.00
+[2]Biryani-Rs 510.00
+[3]Gobi Rice-Rs 160.00
+Enter your choice here:2
+Enter quantity3
+Your total amount is=1530.000000
+ Would you like to by anything else?
+ [1]Yes,[2]No1
+Welcome to Sitara Restaurant
+Lunch  Menu
+Please select the food that you would like to purchase
+[1]Rice-Rs 180.00
+[2]Biryani-Rs 510.00
+[3]Gobi Rice-Rs 160.00
+Enter your choice here:1
+Enter quantity1
+Your total amount is=180.000000
+ Would you like to by anything else?
+ [1]Yes,[2]No2
+WELCOME TO SITARA RESTARUANT
+ Please select the meal that you would like to purchase
+ [A]Breakfast [B]Lunch [c]Dinner [D]ExitEnter your choice here:
+
+
+
+
+
+
+WELCOME TO SITARA RESTARUANT
+ Please select the meal that you would like to purchase
+ [A]Breakfast [B]Lunch [c]Dinner [D]ExitEnter your choice here:C
+Welcome to Sitara Restaurant
+Dinner Menu
+Please select the food that you would like to purchase
+[1]Chicken Chop-Rs 180.00
+[2]Spagetti-Rs 510.00
+[3]Chicken Burger -Rs 160.00
+Enter your choice here:3
+Enter quantity2
+Your total amount is=320.000000
+ Would you like to by anything else?
+ [1]Yes,[2]No
